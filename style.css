@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  position: relative;
+}
+.navOpen {
+  overflow: hidden;
+}
+.wrapper {
+  transition-duration: 0.5s;
+  transition-timing-function: swing;
+  background-color: white;
+  width: 100%;
+  height: 550vh;
+  position: relative;
+  padding: 100px 40px;
+ 
+ 
+}
+.wrapper.open {
+  transform: translateX(500px) translateY(50px);
+  -webkit-transform: translateX(500px) translateY(50px);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+.wrapper section {
+  max-width:95%;
+  margin: 0 auto;
+}
+.wrapper section img {
+  width: 100%;
+  height: 85vh;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+ object-position: left;
+}
+.text{
+  position: absolute;
+  top: 400px;
+  left:750px;
+  text-align: center;
+}
+.text h1{
+  font-size: 60px;
+  color: white;
+  line-height: 1;
+}
+#shopbtn{
+  padding:12px 25px;
+  border: none;
+  border-radius: 50px;
+  
+}
+/* .wrapper section h2 {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.wrapper section p {
+  margin-bottom: 40px;
+} */
+.openNav {
+  transition-duration: 0.5s;
+  transition-timing-function: swing;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9;
+}
+.openNav:hover {
+  cursor: pointer;
+}
+.openNav .icon {
+  transition-duration: 0.2s;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  top: 24px;
+  left: 10px;
+}
+.openNav .icon:before,
+.openNav .icon:after {
+  transition-duration: 0.5s;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  left: 0px;
+}
+.openNav .icon:before {
+  top: -7px;
+ 
+}
+.openNav .icon:after {
+  top: 7px;
+}
+.openNav.open {
+  transform: translateX(250px) translateY(50px);
+  -webkit-transform: translateX(250px) translateY(50px);
+}
+.openNav.open .icon {
+  background-color: rgb(0, 0, 0);
+}
+.openNav.open .icon:before,
+.openNav.open .icon:after {
+  top: 0;
+ 
+}
+.openNav.open .icon:before {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  background-color: white;
+ position: fixed;
+ top: -20px;
+  left: -250px;
+}
+.openNav.open .icon:after {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  background-color: white;
+  position: fixed;
+ top: -20px;
+  left: -250px;
+}
+#menu{
+  position: absolute;
+  top: -10px;
+  left: 40px;
+  color: black;
+  font-weight: 800;
+}
+#logo{
+  position: fixed;
+  top: 25px;
+  left: 920px;
+  color: black;
+  font-weight: 200;
+ 
+}
+nav {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+nav ul {
+  width: 500px;
+  margin-top: 250px;
+}
+nav ul:hover li {
+  color: rgba(255, 255, 255, 0.5);
+}
+nav ul li {
+  transition-duration: 0.25s;
+  display: block;
+  padding: 5px 40px;
+  color: white;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  text-align: left;
+  font-size: 85px;
+  font-weight: 700;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: white;
+}
+#autumn{
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin-top: 100px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+
+}
+#autumn span{
+font-size: 14px;
+}
+#autumn h1{
+  font-size: 60px;
+  font-weight: 700;
+  color: black;
+}
+#autumn p{
+  font-size: 18px;
+  color: black;
+  margin-top: 25px;
+}
+#autumn .divimg1{
+  width: 330px;
+  height: 450px;
+  position: absolute;
+  top: 150px;
+  left: 125px;
+ z-index: 1;
+}
+#autumn .divimg1 img{
+ width: 100%;
+ height: 100%;
+
+}
+#autumn .divbg1{
+  width: 600px;
+  height: 340px;
+  position: absolute;
+  top: 400px;
+  left: 0;
+}
+#autumn .divbg1 img{
+  width: 100%;
+  height: 100%;
+}
+#autumn .divimg2{
+  width: 280px;
+  height: 350px;
+  position: absolute;
+  top: 125px;
+  right: 260px;
+  z-index: 1;
+}
+#autumn .divimg2 img{
+ width: 100%;
+ height: 100%;
+
+}
+#autumn .divbg2{
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  top: 100px;
+  right: -80px;
+}
+#autumn .divbg2 img{
+  width: 100%;
+  height: 100%;
+}
+.video{
+  width: 100%;
+  height: auto;
+}
+#myVideo {
+object-fit: cover;
+min-width: 100%;
+min-height: 100%;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+
+}
+.main{
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 100px;
+
+}
+.text-img{
+  border-radius: 50%;
+  object-fit: cover;
+}
+.content{
+  overflow: hidden;
+ 
+}
+
+.content:hover{
+  overflow-x: scroll;
+  
+}
+
+.cards{
+  width: max-content;
+  height: auto;
+  position: relative;
+}
+.images{
+  width: 900px;
+  height: 600px;
+}
+.images img:hover{
+  transform: scale(1.03);
+  transition: transform .9s;
+ 
+}
+.images img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  
+}
+.message{
+  position: absolute;
+text-align: center;
+top: 200px;
+left: 0;
+color: white;
+z-index: 1;
+}
+.message h1{
+  font-size: 95px;
+  font-weight: 800;
+}
+
+footer{
+  margin-top: 90px;
+  background-image: url(pexels-anna-shvets-5217922.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 110vh;
+  border-radius: 20px;
+}
+.content-text{
+  width: 40%;
+  padding: 40px;
+}
+.content-text h1{
+  font-size: 55px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+table{
+width: 100%;
+margin-top: 50px;
+}
+ tr{
+border-bottom: 1px solid;
+text-align: start;
+}
+td{
+  padding-left: 25px;
+}
+
